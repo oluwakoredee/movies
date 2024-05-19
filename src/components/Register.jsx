@@ -69,7 +69,7 @@ const Register = () => {
             required
           />
         </div>
-        <button type="submit" className=" bg-blue-800 rounded p-2">
+        <button type="submit" className=" bg-yellow-400 rounded p-2">
           Register
         </button>
       </div>

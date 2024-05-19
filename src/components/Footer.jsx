@@ -4,10 +4,10 @@ import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
-    <div className="flex pt-8 justify-between text-[13px]  gap-20 bg-white pb-20">
+    <div className="xl:flex pt-8 justify-between text-[13px] h-full pb-4 gap-20 bg-white xl:pb-20">
       <div className="flex flex-col gap-3 items-center">
-        <img className="h-10 p" src={logo} alt="" />
-        <p className="h-3 pl-20 ">Attacker.tv</p>
+        <img className="hidden lg:flex xl:flex h-10 p" src={logo} alt="" />
+        <p className="h-3 pl-20 hidden lg:flex xl:flex  ">Attacker.tv</p>
       </div>
       <div className="flex flex-col px-10 gap-4">
         <p className="">
@@ -17,11 +17,12 @@ const Footer = () => {
             Android App  -  Terms of services  - contact - sitemap - Faq - 9anime 
         </p>
       </div>
-      <div className="border roboto-thin w-[750px] h-[60px] pl-3 bg-gray-50 mr-5 text-left items-start p-2">
+      <div className="border my-4 roboto-thin xl:w-[750px] xl:h-[60px] xl:pl-3 bg-gray-50 mr-5 xl:text-left xl:items-start xl:p-2 ml-5 ">
         <p>
         Attacker.tv does not store any files on our server, we only linked to the media which is hosted on 3rd party services.
         </p>
       </div>
+      <p className="md:hidden ml-5">Attacker.tv</p>
     </div>
   );
 };
