@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import axios from "axios";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -69,10 +70,11 @@ const Login = () => {
           </div>
 
           <div className="flex items-center justify-between">
-            <div className="text-sm">
+            <div className="flex text-sm justify-between gap-44 md:gap-60 xl:gap-60">
               <a href="#" className="font-medium text-yellow-400 hover:text-indigo-500">
                 Forgot your password?
               </a>
+              <Link className="text-yellow-400 hover:text-indigo-50" to={"register"}>Sign-Up</Link>
             </div>
           </div>
 

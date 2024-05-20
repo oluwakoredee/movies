@@ -7,6 +7,7 @@ import { HiOutlineBars3 } from "react-icons/hi2";
 import { TbLetterX } from "react-icons/tb";
 import { FaSearch } from "react-icons/fa";
 import logo2 from "../assets/react.svg";
+import Login from "./Login";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -145,7 +146,7 @@ const Navbar = () => {
         <div className=" gap-3 md:flex hidden">
         </div>
         <div className="lg:flex absolute right-3 gap-6 text-black pt-3   p-2 bg-white m-2 mr-8 rounded">
-          <p className="bellefair-regular ">Login</p>
+          <Link to={"login"}>Login</Link>
         </div>
       </nav>
       <div>
